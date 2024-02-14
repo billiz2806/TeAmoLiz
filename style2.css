@@ -34,6 +34,16 @@ h1::after {
     transform: translate(-100%);
   }
 }
+/* Aplica la animación 'fadeIn' con una duración de 2 segundos */
+.cont-texto span {
+  animation: fadeIn 2s ease-in;
+}
+
+.letter {
+  overflow: visible;
+  white-space: pre;
+  transform: rotatey(2deg) scalex(1.00061);
+}
 
 @keyframes fadeIn {
   from {
@@ -59,18 +69,6 @@ h1::after {
         padding: 0 1em!important;
         font: 800 9vw chilanka, segoe script, purisa, comic sans ms, cursive!important;
     }
-}
-
-
-/* Aplica la animación 'fadeIn' con una duración de 2 segundos */
-.cont-texto span {
-  animation: fadeIn 2s ease-in;
-}
-
-.letter {
-  overflow: visible;
-  white-space: pre;
-  transform: rotatey(2deg) scalex(1.00061);
 }
 
 .rev {
