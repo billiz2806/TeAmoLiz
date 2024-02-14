@@ -9,11 +9,9 @@ h1 {
   color: aliceblue;
   display: flex;
   position: relative;
-  padding: 0 5.0625em;
-          padding: 0 1em!important;
-        font: 800 9vw chilanka, segoe script, purisa, comic sans ms, cursive!important;
-  /*transform-style: preserve-3d;
-  font: 800 5vw chilanka, segoe script, purisa, comic sans ms, cursive;*/
+  padding: 8%;
+  transform-style: preserve-3d;
+  font: 800 9vw chilanka, segoe script, purisa, comic sans ms, cursive;
   z-index: 1000000;
 }
 h1::after {
@@ -34,15 +32,14 @@ h1::after {
     transform: translate(-100%);
   }
 }
-/* Aplica la animación 'fadeIn' con una duración de 2 segundos */
-.cont-texto span {
-  animation: fadeIn 2s ease-in;
-}
-
 .letter {
   overflow: visible;
   white-space: pre;
   transform: rotatey(2deg) scalex(1.00061);
+}
+
+.rev {
+  transform: rotatey(-2deg) scalex(1.00061);
 }
 
 @keyframes fadeIn {
@@ -71,6 +68,9 @@ h1::after {
     }
 }
 
-.rev {
-  transform: rotatey(-2deg) scalex(1.00061);
+
+/* Aplica la animación 'fadeIn' con una duración de 2 segundos */
+.cont-texto span {
+  animation: fadeIn 2s ease-in;
 }
+
